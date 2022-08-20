@@ -1,0 +1,143 @@
+.header {
+    box-sizing: border-box;
+    margin-left: 98px;
+    margin-right: 70px;
+    height: 99px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-mobil,
+.search {
+    box-sizing: border-box;
+    width: 555px;
+    height: 52px;
+    padding: 15px 0 16px 18px;
+    background-color: #504B4A;
+    border-radius: 10px;
+    border: none;
+}
+
+.search-mobil::placeholder,
+.search::placeholder {
+    background-image: url('./../../assets/Location.png');
+    background-repeat: no-repeat;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    line-height: 21px;
+    padding-left: 48px;
+    color: #CFCFCF;
+
+}
+
+.search-mobil::placeholder::after,
+.search::placeholder::after {
+    background-image: url('./../../assets/Search.png');
+}
+
+.search-mobil {
+    display: none;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+}
+
+.caller-block {
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+    background-image: url(./../../assets/Ellipse.png);
+    background-repeat: no-repeat;
+}
+
+.caller {
+    width: 13px;
+    height: 13px;
+    margin-left: 9.67px;
+    margin-top: 10.67px;
+}
+
+.contact-text {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #CFCFCF;
+}
+
+.contact-number {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.cart {
+    width: 149px;
+    height: 52px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 18px 13px 17px 24px;
+    background-color: #618967;
+    border-radius: 10px;
+}
+
+.cart-text {
+    margin-right: 20px;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 600;
+}
+
+.cart-stick {
+    width: 4px;
+    height: 38px;
+    background-image: url('./../../assets/Stick.png');
+}
+
+.cart-count {
+    width: 24px;
+    height: auto;
+    margin-left: 12px;
+    padding: 5px 9px 5px 8px;
+    background-image: url('./../../assets/Ellipse50.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
+    font-size: 12px;
+    line-height: 15px;
+    font-weight: 600;
+    color: #403C3B;
+}
+
+@media (max-width:1024px) {
+    .search {
+        width: 325px;
+    }
+}
+
+@media (max-width:768px) {
+    .header-block {
+        padding-bottom: 13px;
+    }
+
+    .search {
+        display: none;
+    }
+    
+    .search-mobil {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 375px) {
+    .contacts {
+        display: none;
+    }
+
+    .search-mobil {
+        width: 345px;
+    }
+}

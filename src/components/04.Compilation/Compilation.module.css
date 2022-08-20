@@ -1,0 +1,22 @@
+.compilation {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.products {
+    padding: 40px 0;
+    height: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    overflow-y: visible;
+}
+
+.products::-webkit-scrollbar {
+    display: none;
+}
+
+.title {
+    margin: 40px 0 0 91px ;
+    padding-left: 19px;
+    border-left: 4px solid #618967;
+}

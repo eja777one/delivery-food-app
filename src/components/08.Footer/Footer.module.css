@@ -1,0 +1,109 @@
+.footer {
+    padding: 26px 0 30px 40px;
+    display: flex;
+    align-items: center;
+    background-color: #2E2B2C
+}
+
+.icon-link {
+    margin-right: 55px;
+    box-sizing: border-box;
+    width: 64px;
+    height: 64px;
+    background-image: url('./../../assets/EllipseWhite50.png');
+    background-repeat: no-repeat;
+}
+
+.icon {
+    padding: 25px 20px;
+}
+
+.policy-block {
+    margin-right: 89px;
+    max-width: 208px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rights {
+    margin: 15px 0 7px 0;
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: 500;
+    color: rgba(207, 207, 207, 1);
+}
+
+.policy-links {
+    box-sizing: border-box;
+    height: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.policy-link {
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+}
+
+.policy-link span {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.links-block {
+    width: 621px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.link {
+    font-style: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #fff
+}
+
+@media (max-width: 1024px) {
+    .icon-link-block {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 40px;
+        flex-direction: column-reverse;
+    }
+
+    .logo-links {
+        display: flex;
+    }
+
+    .policy-block {
+        margin: 30px 0 0 0;
+        max-width: none;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .links-block {
+        width: 100%;
+    }
+
+    .policy-links {
+        height: auto;
+        flex-direction: row;
+    }
+
+    .policy-link span {
+        text-align: center;
+    }
+
+    .rights {
+        margin: 0 0 0 15px;
+    }
+}

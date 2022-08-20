@@ -1,0 +1,1 @@
+export const selectColds = (state) => state.colds

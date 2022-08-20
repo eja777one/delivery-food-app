@@ -1,0 +1,1 @@
+export const selectMeats = (state) => state.meats

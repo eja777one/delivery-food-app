@@ -1,0 +1,28 @@
+.cards {
+    width: 471px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 228px;
+    height: 227px;
+    background-color: rgba(80, 75, 74, 0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card:nth-child(odd) {
+    margin-right: 15px;
+}
+
+.card:nth-child(3) {
+    margin-top: 15px;
+}
+
+.card:nth-child(4) {
+    margin-top: 15px;
+}
