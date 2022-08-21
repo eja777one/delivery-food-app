@@ -1,43 +1,43 @@
 .header {
-    box-sizing: border-box;
-    margin-left: 98px;
-    margin-right: 70px;
-    height: 99px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 70px 0 98px;
+    height: 99px;
+    box-sizing: border-box;
 }
 
-.search-mobil,
-.search {
-    box-sizing: border-box;
+.burger-menu {
+    display: none;
+    border: none;
+    background-color: inherit;
+}
+
+.search,
+.search-mobil {
+    padding: 15px 0 16px 18px;
+    border: none;
+    border-radius: 10px;
     width: 555px;
     height: 52px;
-    padding: 15px 0 16px 18px;
+    box-sizing: border-box;
     background-color: #504B4A;
-    border-radius: 10px;
-    border: none;
-}
-
-.search-mobil::placeholder,
-.search::placeholder {
-    background-image: url('./../../assets/Location.png');
-    background-repeat: no-repeat;
-    font-family: 'Gilroy';
-    font-size: 18px;
-    line-height: 21px;
-    padding-left: 48px;
-    color: #CFCFCF;
-
-}
-
-.search-mobil::placeholder::after,
-.search::placeholder::after {
-    background-image: url('./../../assets/Search.png');
 }
 
 .search-mobil {
     display: none;
+}
+
+.search::placeholder,
+.search-mobil::placeholder {
+    padding-left: 48px;
+    font-family: 'Gilroy';
+    font-size: 18px;
+    line-height: 21px;
+    color: #CFCFCF;
+    background-image: url('./assets/Location.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .contacts {
@@ -49,66 +49,78 @@
     margin-right: 10px;
     width: 32px;
     height: 32px;
-    background-image: url(./../../assets/Ellipse.png);
+    background-image: url('./assets/Ellipse.png');
     background-repeat: no-repeat;
 }
 
 .caller {
+    margin: 10.67px 0 0 9.67px;
     width: 13px;
     height: 13px;
-    margin-left: 9.67px;
-    margin-top: 10.67px;
 }
 
 .contact-text {
     font-size: 12px;
-    line-height: 20px;
     font-weight: 400;
+    line-height: 20px;
     color: #CFCFCF;
 }
 
 .contact-number {
     font-size: 16px;
+    font-weight: 700;
     line-height: 20px;
-    font-weight: bold;
 }
 
 .cart {
-    width: 149px;
-    height: 52px;
-    box-sizing: border-box;
     display: flex;
     align-items: center;
     padding: 18px 13px 17px 24px;
-    background-color: #618967;
     border-radius: 10px;
+    width: 149px;
+    height: 52px;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #618967;
 }
 
 .cart-text {
     margin-right: 20px;
     font-size: 14px;
-    line-height: 17px;
     font-weight: 600;
-}
-
-.cart-stick {
-    width: 4px;
-    height: 38px;
-    background-image: url('./../../assets/Stick.png');
+    line-height: 17px;
 }
 
 .cart-count {
-    width: 24px;
-    height: auto;
     margin-left: 12px;
     padding: 5px 9px 5px 8px;
-    background-image: url('./../../assets/Ellipse50.png');
+    width: 24px;
+    height: auto;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    color: #403C3B;
+    background-image: url('./assets/Ellipse50.png');
     background-repeat: no-repeat;
     object-fit: cover;
+}
+
+.cart2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    padding: 5px 0 9px 0;
+    border: 1px solid #618967;
+    border-radius: 10px;
+    width: 62px;
+    height: 56px;
+    box-sizing: border-box;
     font-size: 12px;
-    line-height: 15px;
     font-weight: 600;
-    color: #403C3B;
+    line-height: 14px;
+    background-color: #618967;
 }
 
 @media (max-width:1024px) {
@@ -125,7 +137,7 @@
     .search {
         display: none;
     }
-    
+
     .search-mobil {
         display: block;
         margin: 0 auto;
@@ -133,11 +145,37 @@
 }
 
 @media (max-width: 375px) {
+    .header {
+        margin: 0;
+        padding: 12px 15px 13px 26px;
+        height: auto;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .search-mobil {
+        margin-bottom: 0;
+        width: 345px;
+        height: 52px;
+    }
+
+    .search-mobil::placeholder {
+        padding: 0 18px 0 48px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
     .contacts {
         display: none;
     }
 
-    .search-mobil {
-        width: 345px;
+    .cart {
+        display: none;
+    }
+
+    .cart2 {
+        display: flex;
     }
 }

@@ -47,10 +47,15 @@ body {
     margin-left: auto;
     margin-right: auto;
     color: white;
-    background-color: #403C3B;
+    background: linear-gradient(360deg, #211F20 0%, #44403F 100%);;
     font-family: 'Gilroy';
 }
 
 a {
     text-decoration: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
 }

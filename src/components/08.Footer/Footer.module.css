@@ -1,16 +1,17 @@
 .footer {
-    padding: 26px 0 30px 40px;
+    position: relative;
     display: flex;
     align-items: center;
+    padding: 26px 0 30px 40px;
     background-color: #2E2B2C
 }
 
 .icon-link {
     margin-right: 55px;
-    box-sizing: border-box;
     width: 64px;
     height: 64px;
-    background-image: url('./../../assets/EllipseWhite50.png');
+    box-sizing: border-box;
+    background-image: url('./assets/EllipseWhite50.png');
     background-repeat: no-repeat;
 }
 
@@ -19,32 +20,32 @@
 }
 
 .policy-block {
-    margin-right: 89px;
-    max-width: 208px;
     display: flex;
     flex-direction: column;
+    margin-right: 89px;
+    max-width: 208px;
 }
 
 .rights {
     margin: 15px 0 7px 0;
     font-size: 12px;
-    line-height: 14px;
     font-weight: 500;
+    line-height: 14px;
     color: rgba(207, 207, 207, 1);
 }
 
 .policy-links {
-    box-sizing: border-box;
-    height: 64px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 64px;
+    box-sizing: border-box;
 }
 
 .policy-link {
     font-size: 14px;
-    line-height: 17px;
     font-weight: 500;
+    line-height: 17px;
     color: rgba(255, 255, 255, 1);
 }
 
@@ -53,15 +54,15 @@
 }
 
 .links-block {
-    width: 621px;
     display: flex;
     justify-content: space-between;
+    width: 621px;
 }
 
 .link {
     font-style: 20px;
-    line-height: 24px;
     font-weight: 500;
+    line-height: 24px;
     color: #fff
 }
 
@@ -73,8 +74,8 @@
 
 @media (max-width: 768px) {
     .footer {
-        padding: 40px;
         flex-direction: column-reverse;
+        padding: 40px;
     }
 
     .logo-links {
@@ -82,12 +83,12 @@
     }
 
     .policy-block {
-        margin: 30px 0 0 0;
-        max-width: none;
-        width: 100%;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin: 30px 0 0 0;
+        max-width: none;
+        width: 100%;
     }
 
     .links-block {
@@ -95,8 +96,8 @@
     }
 
     .policy-links {
-        height: auto;
         flex-direction: row;
+        height: auto;
     }
 
     .policy-link span {
@@ -105,5 +106,41 @@
 
     .rights {
         margin: 0 0 0 15px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .footer {
+        flex-wrap: nowrap;
+        padding: 27px 83px 47px 84px;
+    }
+
+    .icon-link-block {
+        position: absolute;
+        top: 30px;
+        left: 17px;
+        display: block;
+    }
+
+    .links-block {
+        display: none;
+    }
+
+    .policy-block {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .policy-links {
+        flex-direction: column;
+        height: 64px;
+        text-align: center;
+    }
+
+    .rights {
+        margin: 25px 0 13px 0 ;
+        width: 189px;
+        text-align: center;
     }
 }

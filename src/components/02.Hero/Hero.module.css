@@ -2,3 +2,11 @@
     width: 100%;
     height: auto;
 }
+
+@media (max-width: 375px) {
+    .hero {
+        height: 296px;
+        object-fit: cover;
+        object-position: -52px;
+    }
+}

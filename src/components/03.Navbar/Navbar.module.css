@@ -1,14 +1,14 @@
 .navbar {
-    text-align: center;
-    box-sizing: border-box;
-    height: 78px;
-    padding: 29px 88px 0 80px;
     display: flex;
     justify-content: space-between;
-    text-decoration: none;
+    padding: 29px 88px 0 80px;
+    height: 78px;
+    box-sizing: border-box;
     font-size: 18px;
+    text-align: center;
+    text-decoration: none;
     line-height: 21px;
-    /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+    list-style-type: none;
     color: #CFCFCF;
 }
 
@@ -17,17 +17,27 @@ a:visited {
 }
 
 .active {
+    padding: 0 0 45px 0;
+    border-bottom: 3px solid #618967;
     font-weight: 500;
     color: #ffffff;
-    border-bottom: 3px solid #618967
 }
-
-@media (max-width: 1024px) {}
 
 @media (max-width:768px) {
     .navbar {
         padding: 30px 30px 0 30px;
         font-size: 16px;
         line-height: 21px;
+    }
+}
+
+@media (max-width: 375px) {
+    .navbar {
+        padding: 20px 15px;
+        width: 955px;
+        height: 55px;
+        overflow-x: scroll;
+        font-size: 14px;
+        line-height: 16px;
     }
 }

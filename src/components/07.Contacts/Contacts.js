@@ -1,10 +1,10 @@
 import styles from './Contacts.module.css'
-import fb from './../../assets/facebook.png'
-import vk from './../../assets/vk.png'
-import youtube from './../../assets/youtube.png'
-import instagram from './../../assets/instagram.png'
-import locIcon from './../../assets/Loc.png'
-import messageIcon from './../../assets/Message.png'
+import fb from './assets/facebook.png'
+import vk from './assets/vk.png'
+import youtube from './assets/youtube.png'
+import instagram from './assets/instagram.png'
+import locIcon from './assets/Loc.png'
+import messageIcon from './assets/Message.png'
 
 const Contacts = () => {
     return (

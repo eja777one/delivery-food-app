@@ -1,15 +1,19 @@
 import styles from './Compilation.module.css'
 import Product from '../05.Product/Product'
 
-const Cold = (props) => {
+const Compilation = (props) => {
     const content = props.data.map(item => {
         return <Product
+            id={item.id}
             key={item.id}
             img={item.img}
             title={item.title}
             weight={item.weight}
             text={item.text}
-            price={item.price} />
+            price={item.price}
+            active={item.active}
+            count={item.count}
+        />
     })
 
     return (
@@ -20,4 +24,4 @@ const Cold = (props) => {
     )
 }
 
-export default Cold
+export default Compilation

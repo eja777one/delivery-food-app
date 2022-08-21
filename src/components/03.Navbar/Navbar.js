@@ -2,16 +2,16 @@ import styles from './Navbar.module.css'
 
 const Navbar = () => {
     return (
-        <div className={styles.navbar}>
-            <a className={styles.active } href='#'>Холодные закуски</a>
-            <a href='#'>Горячие закузки</a>
-            <a href='#'>Мясные блюда</a>
-            <a href='#'>Супы</a>
-            <a href='#'>Рыбные блюда</a>
-            <a href='#'>Гриль меню</a>
-            <a href='#'>Фирменные блюда</a>
-            <a href='#'>Напитки</a>
-        </div>
+        <ul className={styles.navbar}>
+            <li><a className={styles.active} href='#'>Холодные закуски</a></li>
+            <li><a href='#'>Горячие закузки</a></li>
+            <li><a href='#'>Мясные блюда</a></li>
+            <li><a href='#'>Супы</a></li>
+            <li><a href='#'>Рыбные блюда</a></li>
+            <li><a href='#'>Гриль меню</a></li>
+            <li><a href='#'>Фирменные блюда</a></li>
+            <li><a href='#'>Напитки</a></li>
+        </ul>
     )
 }
 

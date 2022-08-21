@@ -1,0 +1,132 @@
+.product-block {
+    padding: 40px 0 50px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1)
+}
+
+.cart {
+    position: relative;
+    margin: 0 auto;
+    width: 1210px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    padding-left: 9px;
+    height: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19px;
+    color: #fff;
+    background-image: url('./assets/Ellipse.png');
+    background-size: 26px;
+    background-repeat: no-repeat;
+    background-color: inherit;
+}
+
+.arrow {
+    margin-right: 25px;
+}
+
+.product {
+    display: flex;
+    margin-top: 28px;
+    border-radius: 10px;
+    height: 399px;
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+}
+
+.product-img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.product-description {
+    padding: 38px 130px 25px 50px;
+}
+
+.product-description h3 {
+    margin: 0;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.product-description p {
+    margin: 5px 0 113px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(207, 207, 207, 1);
+}
+
+.product-description .weight {
+    margin: 0 0 22px 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.button2 {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    padding: 9px 15px 9px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #fff;
+    background-color: rgba(97, 137, 103, 1);
+    cursor: pointer;
+}
+
+.button2 span {
+    margin-right: 20px;
+}
+
+.button2 .shoppingBag {
+    margin-left: 15px;
+}
+
+.price-block {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.params {
+    display: flex;
+    margin-top: 30px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.params li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.params li span {
+    display: block;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.params li span:not(:last-child) {
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.params li span:not(:first-child) {
+    font-weight: 500;
+}
+
+.line {
+    position: absolute;
+    bottom: 87px;
+    right: 0;
+}

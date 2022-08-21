@@ -1,6 +1,6 @@
 import styles from './Footer.module.css'
-import arrow from './../../assets/Arrow4.png'
-import logo from './../../assets/LOGOS.png'
+import arrow from './assets/Arrow4.png'
+import logo from './assets/LOGOS.png'
 
 
 const Footer = () => {

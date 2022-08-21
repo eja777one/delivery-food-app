@@ -3,10 +3,10 @@
 }
 
 .products {
-    padding: 40px 0;
-    height: 400px;
     display: flex;
     flex-wrap: nowrap;
+    padding: 40px 0;
+    height: 400px;
     overflow-x: scroll;
     overflow-y: visible;
 }
@@ -16,7 +16,7 @@
 }
 
 .title {
-    margin: 40px 0 0 91px ;
+    margin: 40px 0 0 91px;
     padding-left: 19px;
     border-left: 4px solid #618967;
 }
